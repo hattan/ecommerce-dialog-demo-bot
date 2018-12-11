@@ -1,0 +1,17 @@
+{
+  "name": "ecommercebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^4.1.7",
+    "botbuilder-dialogs": "^4.1.7",
+    "botbuilder-greeting": "^1.0.1",
+    "restify": "^7.3.0"
+  }
+}
