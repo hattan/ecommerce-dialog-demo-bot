@@ -17,16 +17,11 @@ class CardService{
                                       "type": "Image",
                                       "url": "https://mimity-electronics12.netlify.com/img/product/1.jpg",
                                       "size": "Medium"
-                                  },
-                                  {
-                                      "type": "TextBlock",
-                                      "horizontalAlignment": "Center",
-                                      "weight": "Bolder",
-                                      "text": "Surface Go"
                                   }
                               ],
                               "width": "auto"
-                          }, {
+                          },
+                          {
                               "type": "Column",
                               "spacing": "Medium",
                               "separator": true,
@@ -36,16 +31,12 @@ class CardService{
                                       "horizontalAlignment": "Center",
                                       "url": "https://mimity-electronics12.netlify.com/img/product/15.jpg",
                                       "size": "Medium"
-                                  },
-                                  {
-                                      "type": "TextBlock",
-                                      "horizontalAlignment": "Center",
-                                      "weight": "Bolder",
-                                      "text": "LG Laptop"
                                   }
+                                  
                               ],
                               "width": "auto"
-                          }, {
+                          },
+                          {
                               "type": "Column",
                               "spacing": "Medium",
                               "separator": true,
@@ -55,12 +46,6 @@ class CardService{
                                       "horizontalAlignment": "Center",
                                       "url": "http://adaptivecards.io/content/cats/3.png",
                                       "size": "Medium"
-                                  },
-                                  {
-                                      "type": "TextBlock",
-                                      "horizontalAlignment": "Center",
-                                      "weight": "Bolder",
-                                      "text": "Ninja Cat"
                                   }
                               ],
                               "width": "auto"
@@ -68,6 +53,24 @@ class CardService{
                       ]
                   }
               ]
+          }
+      ],
+      "actions": [
+          {
+              "type": "Action.OpenUrl",
+              "id": "OpenUrl1",
+              "title": "Surface Go",
+              "url": "http://localhost:8080/html/detail.html"
+          },     {
+              "type": "Action.OpenUrl",
+              "id": "OpenUrl1",
+              "title": "LG Laptop",
+              "url": "http://localhost:8080/html/detail.html"
+          },     {
+              "type": "Action.OpenUrl",
+              "id": "OpenUrl1",
+              "title": "Ninja Cat",
+              "url": "http://localhost:8080/html/detail.html"
           }
       ],
       "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
