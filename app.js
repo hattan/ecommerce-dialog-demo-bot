@@ -5,7 +5,12 @@ const cardService = require('./cardService');
 const ShopDialog = require('./shopdialog');
 const server = require('restify').createServer();
 
-const adapter = new BotFrameworkAdapter();
+const adapter = new BotFrameworkAdapter({ 
+  appId: process.env.MicrosoftAppId, 
+  appPassword: process.env.MicrosoftAppPassword 
+});
+
+
 adapter.use(new BotGreeting(async context=>{
   await context.sendActivity({ attachments: [cardService.createAdaptiveCard()] });
 }));
@@ -13,7 +18,7 @@ adapter.use(new BotGreeting(async context=>{
 const conversationState = new ConversationState(new MemoryStorage());
 const shopDialog = new ShopDialog(conversationState);
 
-server.listen(3978, ()=>{
+server.listen(process.env.port || process.env.PORT || 3978, ()=>{
   console.log(`${server.name} listening on ${server.url}`)
 });
 
