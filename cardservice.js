@@ -60,17 +60,17 @@ class CardService{
               "type": "Action.OpenUrl",
               "id": "OpenUrl1",
               "title": "Surface Go",
-              "url": "http://localhost:8080/html/detail.html"
+              "url": "https://hattan.io/ecommerce/html/detail.html"
           },     {
               "type": "Action.OpenUrl",
               "id": "OpenUrl1",
               "title": "LG Laptop",
-              "url": "http://localhost:8080/html/detail.html"
+              "url": "https://hattan.io/ecommerce/html/detail.html"
           },     {
               "type": "Action.OpenUrl",
               "id": "OpenUrl1",
               "title": "Ninja Cat",
-              "url": "http://localhost:8080/html/detail.html"
+              "url": "https://hattan.io/ecommerce/html/detail.html"
           }
       ],
       "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
